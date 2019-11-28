@@ -27,12 +27,12 @@ class Booking3 {
 	   String  prooftype=s.nextLine();  
 	     System.out.println("Enter proof id");
 	String proofid=s.nextLine();  
-	   C3 cust=new C3(name,address,contact,email,prooftype,proofid);
+	Person cust=new Person(name,address,contact,email,prooftype,proofid);
 	    cust.reg(name,address,contact,email,prooftype,proofid);
 	  }
 	}
 
-	class Customer
+	class Person
 	
 	{	Scanner s=new Scanner(System.in);
 	String pr="";String email1;
@@ -43,7 +43,7 @@ class Booking3 {
 	  		String email; 
 	  		String prooftype; 
 	 		String proofid;
-	  Customer(String name,String address,String contact,String email,String prooftype,String proofid)
+	  Person(String name,String address,String contact,String email,String prooftype,String proofid)
 	  {
 	    this.name=name;
 	      this.address=address;
